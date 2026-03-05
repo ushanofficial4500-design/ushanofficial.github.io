@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <title>Ushan Official | Photography</title>
 
 <meta name="description" content="Ushan Official Photography - Creative photography portfolio from Sri Lanka.">
@@ -11,52 +12,73 @@
 body{
 margin:0;
 font-family:Arial;
-background:#000;
+background:black;
 color:white;
 text-align:center;
+scroll-behavior:smooth;
 }
 
-/* header */
+/* HEADER */
 
 .header{
 background:#c40000;
-padding:20px;
+padding:25px;
 font-size:35px;
 font-weight:bold;
 letter-spacing:2px;
-animation:fade 2s;
 }
 
-/* menu */
+/* MENU */
 
 .menu{
 background:#111;
 padding:15px;
+position:sticky;
+top:0;
 }
 
 .menu a{
 color:white;
-text-decoration:none;
 margin:20px;
+text-decoration:none;
 font-size:18px;
 }
 
 .menu a:hover{
-color:#ff3b3b;
+color:red;
 }
 
-/* sections */
+/* HERO */
+
+.hero{
+background-image:url("https://images.unsplash.com/photo-1492724441997-5dc865305da7");
+background-size:cover;
+background-position:center;
+padding:150px 20px;
+}
+
+.hero h1{
+font-size:50px;
+}
 
 .section{
-padding:60px 20px;
+padding:80px 20px;
+max-width:900px;
+margin:auto;
 }
 
-/* gallery */
+/* GALLERY */
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
 
 .gallery img{
-width:280px;
-border-radius:10px;
+width:260px;
 margin:10px;
+border-radius:10px;
 transition:0.4s;
 }
 
@@ -64,39 +86,49 @@ transition:0.4s;
 transform:scale(1.08);
 }
 
-/* background section */
+/* SERVICES */
 
-.hero{
-background-image:url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
-background-size:cover;
-background-position:center;
-padding:120px 20px;
+.services{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 }
 
-.hero h2{
-font-size:40px;
+.service-box{
+background:#111;
+padding:25px;
+margin:15px;
+border-radius:10px;
+width:250px;
 }
 
-/* contact */
+/* SOCIAL */
+
+.social a{
+color:white;
+margin:10px;
+font-size:20px;
+text-decoration:none;
+}
+
+.social a:hover{
+color:red;
+}
+
+/* CONTACT */
 
 .contact{
 background:#111;
-padding:50px;
+padding:70px 20px;
 }
 
-/* footer */
+/* FOOTER */
 
 .footer{
-background:#000;
+background:black;
 padding:20px;
 font-size:14px;
-}
-
-/* animation */
-
-@keyframes fade{
-from{opacity:0}
-to{opacity:1}
+color:#aaa;
 }
 
 </style>
@@ -113,37 +145,47 @@ Ushan Official Photography
 <a href="#">Home</a>
 <a href="#about">About</a>
 <a href="#gallery">Gallery</a>
+<a href="#services">Services</a>
 <a href="#contact">Contact</a>
 </div>
 
-<div class="section hero">
+<!-- HERO -->
 
-<h2>Welcome</h2>
+<div class="hero">
+
+<h1>Welcome</h1>
 
 <p>
 Photography is the story I fail to put into words.  
-Every photo captures a moment that never returns again.  
-Thank you for visiting my official photography website.
+Every photo captures a moment that will never return again.
 </p>
 
 </div>
+
+<!-- ABOUT -->
 
 <div id="about" class="section">
 
 <h2>About Me</h2>
 
 <p>
-Hello! I am <b>Ushan</b>, a passionate photographer from Sri Lanka.  
-Photography is not just my hobby — it is my art and my passion.  
 
-Through my lens I capture nature, life, emotions, and beautiful moments.
+Hello! I am <b>Ushan</b>, a passionate photographer from Sri Lanka.
+
+Photography is not just my hobby — it is my passion and my art.  
+Through my lens I capture emotions, nature, life and unforgettable moments.
+
 </p>
 
 </div>
 
-<div id="gallery" class="section gallery">
+<!-- GALLERY -->
 
-<h2>My Photography</h2>
+<div id="gallery" class="section">
+
+<h2>Photography Gallery</h2>
+
+<div class="gallery">
 
 <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
 
@@ -151,17 +193,72 @@ Through my lens I capture nature, life, emotions, and beautiful moments.
 
 <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
 
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+
+<img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+
+<img src="https://images.unsplash.com/photo-1500534623283-312aade485b7">
+
 </div>
+
+</div>
+
+<!-- SERVICES -->
+
+<div id="services" class="section">
+
+<h2>Photography Services</h2>
+
+<div class="services">
+
+<div class="service-box">
+<h3>Event Photography</h3>
+<p>Professional photography for events and special moments.</p>
+</div>
+
+<div class="service-box">
+<h3>Portrait Photography</h3>
+<p>Creative portrait photography sessions.</p>
+</div>
+
+<div class="service-box">
+<h3>Nature Photography</h3>
+<p>Capturing beautiful landscapes and nature moments.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- MOTIVATION -->
+
+<div class="section">
+
+<h2>Photography Inspiration</h2>
+
+<p>
+
+"Photography is the art of freezing time and capturing memories forever."
+
+</p>
+
+</div>
+
+<!-- CONTACT -->
 
 <div id="contact" class="contact">
 
 <h2>Contact Me</h2>
 
-<p>Email: ushanofficial@email.com</p>
+<p>Email : ushanofficial@email.com</p>
 
-<p>WhatsApp / Phone: +94741699552</p>
+<p>WhatsApp / Phone : +94741699552</p>
 
-<p>
+<div class="social">
 
 <a href="https://www.tiktok.com/@ushan_official?_r=1&_t=ZS-94Rk6vToYKL">TikTok</a> |
 
@@ -169,7 +266,7 @@ Through my lens I capture nature, life, emotions, and beautiful moments.
 
 <a href="https://www.instagram.com/ushanofficial?igsh=ZHNpOTZpdGVqYTBj">Instagram</a>
 
-</p>
+</div>
 
 </div>
 
