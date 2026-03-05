@@ -1,37 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ushan Official | Photography</title>
+<title>Ushan Official | Photography</title>
 
-<meta name="description" content="Ushan Official Photography portfolio. Professional photography and creative gallery.">
-
-<meta name="keywords" content="Ushan Official, Photography, Photographer, Sri Lanka Photography">
+<meta name="description" content="Ushan Official Photography - Creative photography portfolio from Sri Lanka.">
+<meta name="keywords" content="Ushan Official, Photography, Photographer, Sri Lanka">
 
 <style>
+
 body{
-font-family: Arial;
 margin:0;
-background:#111;
+font-family:Arial;
+background:#000;
 color:white;
 text-align:center;
 }
+
+/* header */
 
 .header{
 background:#c40000;
 padding:20px;
 font-size:35px;
 font-weight:bold;
+letter-spacing:2px;
+animation:fade 2s;
 }
+
+/* menu */
+
+.menu{
+background:#111;
+padding:15px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin:20px;
+font-size:18px;
+}
+
+.menu a:hover{
+color:#ff3b3b;
+}
+
+/* sections */
 
 .section{
-padding:40px;
+padding:60px 20px;
 }
 
-img{
-width:250px;
-margin:10px;
+/* gallery */
+
+.gallery img{
+width:280px;
 border-radius:10px;
+margin:10px;
+transition:0.4s;
 }
+
+.gallery img:hover{
+transform:scale(1.08);
+}
+
+/* background section */
+
+.hero{
+background-image:url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+background-size:cover;
+background-position:center;
+padding:120px 20px;
+}
+
+.hero h2{
+font-size:40px;
+}
+
+/* contact */
+
+.contact{
+background:#111;
+padding:50px;
+}
+
+/* footer */
+
+.footer{
+background:#000;
+padding:20px;
+font-size:14px;
+}
+
+/* animation */
+
+@keyframes fade{
+from{opacity:0}
+to{opacity:1}
+}
+
 </style>
 
 </head>
@@ -42,13 +109,73 @@ border-radius:10px;
 Ushan Official Photography
 </div>
 
-<div class="section">
-<h1>Welcome</h1>
-<p>This is my official photography website 📸</p>
+<div class="menu">
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
 
-<img src="https://picsum.photos/300/200">
-<img src="https://picsum.photos/301/200">
-<img src="https://picsum.photos/302/200">
+<div class="section hero">
+
+<h2>Welcome</h2>
+
+<p>
+Photography is the story I fail to put into words.  
+Every photo captures a moment that never returns again.  
+Thank you for visiting my official photography website.
+</p>
+
+</div>
+
+<div id="about" class="section">
+
+<h2>About Me</h2>
+
+<p>
+Hello! I am <b>Ushan</b>, a passionate photographer from Sri Lanka.  
+Photography is not just my hobby — it is my art and my passion.  
+
+Through my lens I capture nature, life, emotions, and beautiful moments.
+</p>
+
+</div>
+
+<div id="gallery" class="section gallery">
+
+<h2>My Photography</h2>
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+
+<img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d">
+
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+
+</div>
+
+<div id="contact" class="contact">
+
+<h2>Contact Me</h2>
+
+<p>Email: ushanofficial@email.com</p>
+
+<p>WhatsApp / Phone: +94741699552</p>
+
+<p>
+
+<a href="https://www.tiktok.com/@ushan_official?_r=1&_t=ZS-94Rk6vToYKL">TikTok</a> |
+
+<a href="https://www.facebook.com/share/p/187ecgpv5M/">Facebook</a> |
+
+<a href="https://www.instagram.com/ushanofficial?igsh=ZHNpOTZpdGVqYTBj">Instagram</a>
+
+</p>
+
+</div>
+
+<div class="footer">
+
+© 2026 Ushan Official Photography
 
 </div>
 
